@@ -1,0 +1,283 @@
+$purple: #541388
+$magenta: #d90368
+$eggshell: #f1e9da
+$blue: #2e294e
+$yellow: #ffd400
+
+$dark-grey: #2d2d2d
+$white: #fff
+
+$font-stack: Century Gothic, sans serif
+
+// For local dev ONLY
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+
+main#get-started
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: $font-stack
+  color: $dark-grey
+
+
+  .ctas
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  // Buttons
+  a.cta
+    margin-top: 20px
+    display: inline-block
+    padding: 20px 20px
+    border-radius: 50px
+    background-color: $eggshell
+    color: $dark-grey
+    margin-right: 12px
+    text-decoration: none
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2)
+    transition: 0.1s ease-out
+    font-size: 1em
+    i.fa
+      margin: 0px 7px
+    &:last-of-type
+      margin-right: 0px
+    &:hover
+      filter: brightness(1.1)
+    &:active
+      filter: brightness(1.2)
+      box-shadow: 0px 5px 2px rgba(0,0,0,0.3)
+
+  section.slice
+    margin: 0px
+    padding: 0px
+    width: 100%
+    position: relative
+    overflow: hidden
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0px
+      left: 0px
+      right: 0px
+      height: 15px
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0))
+    // Background colors
+    &:nth-of-type(1)
+      background-color: $purple
+      color: $white
+      svg path
+          fill: $purple
+    &:nth-of-type(3)
+      background-color: $magenta
+      svg path
+          fill: $magenta
+      color: $white
+    &:nth-of-type(2)
+      background-color: $eggshell
+      color: $dark-grey
+      .text h2
+        color: $dark-grey
+      svg path
+          fill: $eggshell
+    &:nth-of-type(4)
+      background-color: $blue
+      color: $white
+      svg path
+          fill: $blue
+    &:nth-of-type(5)
+      background-color: $yellow
+      color: $dark-grey
+      .text h2
+        color: $dark-grey
+      svg path
+          fill: $yellow
+    &:nth-of-type(6)
+      background-color: $magenta
+      color: $white
+      svg path
+          fill: $magenta
+    &:nth-of-type(7)
+      background-color: $purple
+      color: $white
+
+    .video-container
+      max-width: 100%
+      height: 0
+      padding-bottom: 56.25%
+      position: relative
+      #ytplayer
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        width: 100%
+        height: 100%
+
+    .text
+      padding: 50px 25px
+      h1
+        font-size: 3em
+        margin-bottom: 20px
+        line-height: 1.1em
+        color: $white
+        padding: 0px
+        border: none !important
+      h2
+        font-size: 2em
+        margin-bottom: 15px
+        color: $white
+        padding: 0px
+      p
+        margin-bottom: 10px
+
+    .imagery
+      width: 100%
+      height: 0
+      padding-bottom: 100%
+      position: relative
+      .bg
+        height: 100%
+        width: 100%
+        position: absolute
+        right: 0px
+        bottom: 0px
+        background-size: cover
+        background-position: center
+        svg
+          height: 100%
+          width: 100%
+          position: absolute
+          top: 0px
+          left: 0px
+          right: 0px
+          bottom: 0px
+          transform: rotate(-90deg) scale(1.001)
+
+      div.circle
+        position: absolute
+        top: 15%
+        left: 10%
+        transform: translate3d(0%, 0%, 0px)
+        width: 37%
+        height: 37%
+        border-radius: 1000px
+        background-color: #dfdfdf
+        box-shadow: 0px 5px 8px rgba(0,0,0,0.5)
+        background-size: cover
+        background-position: center
+
+  // Alternate every other section
+  section.slice
+    &#last
+      padding: 70px 0px
+    &:nth-of-type(even)
+      .text
+        text-align: right
+      .imagery
+        .bg
+          left: 0px
+          right: auto
+          svg
+            transform: rotate(0deg)
+        div.circle
+          left: 60%
+    &#hero, &#last
+      .text
+        padding: 40px
+        text-align: center
+
+  section.slice#last
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0px
+      left: 0px
+      right: 0px
+      height: 80px
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0))
+
+
+  @media screen and (min-width: 500px)
+    section.slice
+      .text
+        padding: 35px
+        h2
+          font-size: 2.3em
+        p
+          font-size: 1.1em
+      .video-container
+        margin: 30px
+        padding-bottom: 51%
+
+  @media screen and (min-width: 800px)
+    section.slice.sell
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      &:nth-of-type(even)
+        .text
+          order: 2
+      .imagery
+        flex: 1
+        width: 50%
+        padding-bottom: 50%
+        margin-top: -40px
+      .text
+        width: 50%
+    section.slice#hero
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 80px 25px
+      .text
+        flex: 1
+        text-align: left
+        h1
+          font-size: 3.7em
+        .ctas
+          justify-content: flex-start
+      .media
+        flex: 1
+
+  @media screen and (min-width: 1200px)
+    a.cta
+      font-size: 1.2em
+      padding: 20px 25px
+    section.slice.sell
+      .text
+        padding: 60px
+        h2
+          font-size: 2.8em
+
+  @media screen and (min-width: 1500px)
+    a.cta
+      font-size: 1.3em
+    section.slice#hero, section.slice#last
+      padding: 110px 25px
+      .text
+        h1
+          font-size: 5em
+        p
+          font-size: 1.4em
+      .media
+        flex: 1.5
+    section.slice.sell
+      .text
+        padding: 120px
+        h2
+          font-size: 5em
+          margin-bottom: 20px
+        p
+          font-size: 1.4em
+          margin-bottom: 20px

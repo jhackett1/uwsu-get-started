@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+main#get-started {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Century Gothic, sans serif;
+  color: #2d2d2d; }
+  main#get-started .ctas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  main#get-started a.cta {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 50px;
+    background-color: #f1e9da;
+    color: #2d2d2d;
+    margin-right: 12px;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+    font-size: 1em; }
+    main#get-started a.cta i.fa {
+      margin: 0px 7px; }
+    main#get-started a.cta:last-of-type {
+      margin-right: 0px; }
+    main#get-started a.cta:hover {
+      -webkit-filter: brightness(1.1);
+      filter: brightness(1.1); }
+    main#get-started a.cta:active {
+      -webkit-filter: brightness(1.2);
+      filter: brightness(1.2);
+      -webkit-box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.3); }
+  main#get-started section.slice {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    main#get-started section.slice::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 15px;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(transparent));
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent); }
+    main#get-started section.slice:nth-of-type(1) {
+      background-color: #541388;
+      color: #fff; }
+      main#get-started section.slice:nth-of-type(1) svg path {
+        fill: #541388; }
+    main#get-started section.slice:nth-of-type(3) {
+      background-color: #d90368;
+      color: #fff; }
+      main#get-started section.slice:nth-of-type(3) svg path {
+        fill: #d90368; }
+    main#get-started section.slice:nth-of-type(2) {
+      background-color: #f1e9da;
+      color: #2d2d2d; }
+      main#get-started section.slice:nth-of-type(2) .text h2 {
+        color: #2d2d2d; }
+      main#get-started section.slice:nth-of-type(2) svg path {
+        fill: #f1e9da; }
+    main#get-started section.slice:nth-of-type(4) {
+      background-color: #2e294e;
+      color: #fff; }
+      main#get-started section.slice:nth-of-type(4) svg path {
+        fill: #2e294e; }
+    main#get-started section.slice:nth-of-type(5) {
+      background-color: #ffd400;
+      color: #2d2d2d; }
+      main#get-started section.slice:nth-of-type(5) .text h2 {
+        color: #2d2d2d; }
+      main#get-started section.slice:nth-of-type(5) svg path {
+        fill: #ffd400; }
+    main#get-started section.slice:nth-of-type(6) {
+      background-color: #d90368;
+      color: #fff; }
+      main#get-started section.slice:nth-of-type(6) svg path {
+        fill: #d90368; }
+    main#get-started section.slice:nth-of-type(7) {
+      background-color: #541388;
+      color: #fff; }
+    main#get-started section.slice .video-container {
+      max-width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative; }
+      main#get-started section.slice .video-container #ytplayer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%; }
+    main#get-started section.slice .text {
+      padding: 50px 25px; }
+      main#get-started section.slice .text h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        line-height: 1.1em;
+        color: #fff;
+        padding: 0px;
+        border: none !important; }
+      main#get-started section.slice .text h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+        color: #fff;
+        padding: 0px; }
+      main#get-started section.slice .text p {
+        margin-bottom: 10px; }
+    main#get-started section.slice .imagery {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      position: relative; }
+      main#get-started section.slice .imagery .bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        background-size: cover;
+        background-position: center; }
+        main#get-started section.slice .imagery .bg svg {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          -webkit-transform: rotate(-90deg) scale(1.001);
+          transform: rotate(-90deg) scale(1.001); }
+      main#get-started section.slice .imagery div.circle {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        -webkit-transform: translate3d(0%, 0%, 0px);
+        transform: translate3d(0%, 0%, 0px);
+        width: 37%;
+        height: 37%;
+        border-radius: 1000px;
+        background-color: #dfdfdf;
+        -webkit-box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-position: center; }
+  main#get-started section.slice#last {
+    padding: 70px 0px; }
+  main#get-started section.slice:nth-of-type(even) .text {
+    text-align: right; }
+  main#get-started section.slice:nth-of-type(even) .imagery .bg {
+    left: 0px;
+    right: auto; }
+    main#get-started section.slice:nth-of-type(even) .imagery .bg svg {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg); }
+  main#get-started section.slice:nth-of-type(even) .imagery div.circle {
+    left: 60%; }
+  main#get-started section.slice#hero .text, main#get-started section.slice#last .text {
+    padding: 40px;
+    text-align: center; }
+  main#get-started section.slice#last::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent); }
+  @media screen and (min-width: 500px) {
+    main#get-started section.slice .text {
+      padding: 35px; }
+      main#get-started section.slice .text h2 {
+        font-size: 2.3em; }
+      main#get-started section.slice .text p {
+        font-size: 1.1em; }
+    main#get-started section.slice .video-container {
+      margin: 30px;
+      padding-bottom: 51%; } }
+  @media screen and (min-width: 800px) {
+    main#get-started section.slice.sell {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      main#get-started section.slice.sell:nth-of-type(even) .text {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+      main#get-started section.slice.sell .imagery {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 50%;
+        padding-bottom: 50%;
+        margin-top: -40px; }
+      main#get-started section.slice.sell .text {
+        width: 50%; }
+    main#get-started section.slice#hero {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 80px 25px; }
+      main#get-started section.slice#hero .text {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        text-align: left; }
+        main#get-started section.slice#hero .text h1 {
+          font-size: 3.7em; }
+        main#get-started section.slice#hero .text .ctas {
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start; }
+      main#get-started section.slice#hero .media {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
+  @media screen and (min-width: 1200px) {
+    main#get-started a.cta {
+      font-size: 1.2em;
+      padding: 20px 25px; }
+    main#get-started section.slice.sell .text {
+      padding: 60px; }
+      main#get-started section.slice.sell .text h2 {
+        font-size: 2.8em; } }
+  @media screen and (min-width: 1500px) {
+    main#get-started a.cta {
+      font-size: 1.3em; }
+    main#get-started section.slice#hero, main#get-started section.slice#last {
+      padding: 110px 25px; }
+      main#get-started section.slice#hero .text h1, main#get-started section.slice#last .text h1 {
+        font-size: 5em; }
+      main#get-started section.slice#hero .text p, main#get-started section.slice#last .text p {
+        font-size: 1.4em; }
+      main#get-started section.slice#hero .media, main#get-started section.slice#last .media {
+        -webkit-box-flex: 1.5;
+        -ms-flex: 1.5;
+        flex: 1.5; }
+    main#get-started section.slice.sell .text {
+      padding: 120px; }
+      main#get-started section.slice.sell .text h2 {
+        font-size: 5em;
+        margin-bottom: 20px; }
+      main#get-started section.slice.sell .text p {
+        font-size: 1.4em;
+        margin-bottom: 20px; } }
